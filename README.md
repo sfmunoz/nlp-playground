@@ -74,3 +74,11 @@ $ eval "$(/anaconda3/bin/conda shell.zsh hook)"
 ```
 $ conda deactivate
 ```
+
+## Jupyter Lab
+
+To run **Jupyter Lab** from current location:
+
+```
+$ jupyter lab --notebook-dir=.
+```
