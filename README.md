@@ -62,3 +62,15 @@ conda init
 
 Thank you for installing Anaconda3!
 ```
+
+## Conda activate
+
+```
+$ eval "$(/anaconda3/bin/conda shell.zsh hook)"
+```
+
+## Conda deactivate
+
+```
+$ conda deactivate
+```
