@@ -82,3 +82,26 @@ To run **Jupyter Lab** from this folder use **run.sh** script:
 ```
 $ ./run.sh
 ```
+
+## Git commit workflow
+
+It's enough to user **jupyter nbconvert --clear-output** by hand to keep it simple (for now):
+
+```
+$ git add some_file.ipynb
+
+$ jupyter nbconvert some_file.ipynb --clear-output
+
+$ git diff --staged
+  (... check the full diff ...)
+
+$ git diff
+  (... check "execution=null" and "outputs=[]" ...)
+
+$ git add some_file.ipynb
+
+$ git diff
+  (... check final diff ...)
+
+$ git commit ...
+```
