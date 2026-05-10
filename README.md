@@ -77,8 +77,8 @@ $ conda deactivate
 
 ## Jupyter Lab
 
-To run **Jupyter Lab** from current location:
+To run **Jupyter Lab** from this folder use **run.sh** script:
 
 ```
-$ jupyter lab --notebook-dir=.
+$ ./run.sh
 ```
