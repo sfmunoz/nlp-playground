@@ -14,4 +14,4 @@ fi
 cd "$(dirname "$0")"
 eval "$("${CONDA_BIN}" shell.bash hook)"
 set -x
-JUPYTER_NO_CONFIG=1 jupyter lab --ServerApp.root_dir=.
+jupyter lab --config=./.jupyter/jupyter_server_config.py
