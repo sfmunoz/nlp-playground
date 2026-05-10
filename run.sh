@@ -14,4 +14,4 @@ fi
 cd "$(dirname "$0")"
 eval "$("${CONDA_BIN}" shell.bash hook)"
 set -x
-jupyter lab --notebook-dir=.
+JUPYTER_NO_CONFIG=1 jupyter lab --ServerApp.root_dir=.
