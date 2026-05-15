@@ -2,6 +2,12 @@
 
 set -e -o pipefail
 
+if [ "$LEGACY" != "1" ]; then
+  cd "$(dirname "$0")"
+  set -x
+  exec uv run jupyter lab --config=./.jupyter/jupyter_server_config.py
+fi
+
 [ "${ANACONDA3_FOLDER}" = "" ] && ANACONDA3_FOLDER="/anaconda3"
 
 CONDA_BIN="${ANACONDA3_FOLDER}/bin/conda"

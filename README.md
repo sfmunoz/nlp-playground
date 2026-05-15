@@ -2,7 +2,48 @@
 
 Artificial Intelligence playground to play around and learn AI related skills.
 
-## Anaconda setup
+## Jupyter Lab execution
+
+## uv based
+
+To run **Jupyter Lab** use the **run.sh** script in the root of the project (virtualenv is automatically created by **uv**):
+
+```
+$ ./run.sh
+```
+
+### (legacy) Anaconda based
+
+To run **Jupyter Lab** using **Anaconda3** set **LEGACY=1** before using **run.sh** (some notebooks still need this to find the required libraries):
+
+```
+$ LEGACY=1 ./run.sh
+```
+
+## Git commit workflow
+
+It's enough to user **jupyter nbconvert --clear-output** by hand to keep it simple (for now):
+
+```
+$ git add some_file.ipynb
+
+$ jupyter nbconvert some_file.ipynb --clear-output
+
+$ git diff --staged
+  (... check the full diff ...)
+
+$ git diff
+  (... check "execution=null" and "outputs=[]" ...)
+
+$ git add some_file.ipynb
+
+$ git diff
+  (... check final diff ...)
+
+$ git commit ...
+```
+
+## (legacy) Anaconda setup
 
 Even though there are thinner alternatives I'm using **Anaconda** to have as much software available as possible:
 
@@ -63,45 +104,14 @@ conda init
 Thank you for installing Anaconda3!
 ```
 
-## Conda activate
+### (legacy) Conda activate
 
 ```
 $ eval "$(/anaconda3/bin/conda shell.zsh hook)"
 ```
 
-## Conda deactivate
+### (legacy) Conda deactivate
 
 ```
 $ conda deactivate
-```
-
-## Jupyter Lab
-
-To run **Jupyter Lab** from this folder use **run.sh** script:
-
-```
-$ ./run.sh
-```
-
-## Git commit workflow
-
-It's enough to user **jupyter nbconvert --clear-output** by hand to keep it simple (for now):
-
-```
-$ git add some_file.ipynb
-
-$ jupyter nbconvert some_file.ipynb --clear-output
-
-$ git diff --staged
-  (... check the full diff ...)
-
-$ git diff
-  (... check "execution=null" and "outputs=[]" ...)
-
-$ git add some_file.ipynb
-
-$ git diff
-  (... check final diff ...)
-
-$ git commit ...
 ```
