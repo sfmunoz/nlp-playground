@@ -2,6 +2,37 @@
 
 Artificial Intelligence playground to play around and learn AI related skills.
 
+## Jupyter Lab
+
+To run **Jupyter Lab** from this folder use **run.sh** script:
+
+```
+$ ./run.sh
+```
+
+## Git commit workflow
+
+It's enough to user **jupyter nbconvert --clear-output** by hand to keep it simple (for now):
+
+```
+$ git add some_file.ipynb
+
+$ jupyter nbconvert some_file.ipynb --clear-output
+
+$ git diff --staged
+  (... check the full diff ...)
+
+$ git diff
+  (... check "execution=null" and "outputs=[]" ...)
+
+$ git add some_file.ipynb
+
+$ git diff
+  (... check final diff ...)
+
+$ git commit ...
+```
+
 ## (legacy) Anaconda setup
 
 Even though there are thinner alternatives I'm using **Anaconda** to have as much software available as possible:
@@ -73,35 +104,4 @@ $ eval "$(/anaconda3/bin/conda shell.zsh hook)"
 
 ```
 $ conda deactivate
-```
-
-## Jupyter Lab
-
-To run **Jupyter Lab** from this folder use **run.sh** script:
-
-```
-$ ./run.sh
-```
-
-## Git commit workflow
-
-It's enough to user **jupyter nbconvert --clear-output** by hand to keep it simple (for now):
-
-```
-$ git add some_file.ipynb
-
-$ jupyter nbconvert some_file.ipynb --clear-output
-
-$ git diff --staged
-  (... check the full diff ...)
-
-$ git diff
-  (... check "execution=null" and "outputs=[]" ...)
-
-$ git add some_file.ipynb
-
-$ git diff
-  (... check final diff ...)
-
-$ git commit ...
 ```
