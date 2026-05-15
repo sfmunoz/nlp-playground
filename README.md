@@ -27,7 +27,7 @@ It's enough to user **jupyter nbconvert --clear-output** by hand to keep it simp
 ```
 $ git add some_file.ipynb
 
-$ jupyter nbconvert some_file.ipynb --clear-output
+$ uv run jupyter nbconvert some_file.ipynb --clear-output
 
 $ git diff --staged
   (... check the full diff ...)
