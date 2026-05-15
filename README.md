@@ -2,7 +2,7 @@
 
 Artificial Intelligence playground to play around and learn AI related skills.
 
-## Anaconda setup
+## (legacy) Anaconda setup
 
 Even though there are thinner alternatives I'm using **Anaconda** to have as much software available as possible:
 
@@ -63,13 +63,13 @@ conda init
 Thank you for installing Anaconda3!
 ```
 
-## Conda activate
+### (legacy) Conda activate
 
 ```
 $ eval "$(/anaconda3/bin/conda shell.zsh hook)"
 ```
 
-## Conda deactivate
+### (legacy) Conda deactivate
 
 ```
 $ conda deactivate
