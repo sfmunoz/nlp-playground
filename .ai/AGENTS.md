@@ -4,8 +4,13 @@
   path drops into Anaconda3 first.
 - `pyproject.toml` — single-source of truth for deps.
 - `.jupyter/jupyter_server_config.py` — Jupyter config.
-- Notebooks live in per-library directories: `numpy/`, `pandas/`, `matplotlib/`,
-  `nltk/`, `nlp/`. **Keep new notebooks in the appropriate directory.**
+- Notebooks live in per-library directories. Current libraries:
+  `numpy/`, `pandas/`, `matplotlib/`, `nltk/`, `nlp/`, `seaborn/`.
+  **Keep new notebooks in the appropriate directory.**
+- Each library directory has a `README.md` with: a brief description + a References
+  section linking to the official docs and GitHub repo.
+- The root `README.md` includes a "Library deps" section with a Mermaid dependency
+  graph showing how libraries relate (e.g. seaborn → pandas → numpy).
 
 ## Git Workflow for Notebooks
 
@@ -24,6 +29,6 @@ and build artifacts.
 ## Conventions
 
 - New topics go in their own subdirectory by library name.
-- Notebook filenames: `NNNN_brief_description.ipynb` (zero-padded sequential number
-  + short snake_case name).
+- Notebook filenames: `NNNN_brief_description.ipynb` (zero-padded **4-digit**
+  sequential number + short snake_case name).
 - Don't commit notebooks with output data — always strip before commit.
