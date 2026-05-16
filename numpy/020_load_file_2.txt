@@ -1,0 +1,11 @@
+# id,feat_a,feat_b
+1,one,four
+2,nine,three
+3,eight,seven
+4,TWO,three
+5,nine,six
+6,eight,two
+7,two,SEVEN
+8,five,six
+9,six,seven
+10,two,nine
