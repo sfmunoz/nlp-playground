@@ -32,7 +32,9 @@ $ git diff
 $ git commit ...
 ```
 
-## (legacy) Anaconda setup
+---
+
+## ⚠️ (legacy) Anaconda setup
 
 Even though there are thinner alternatives I'm using **Anaconda** to have as much software available as possible:
 
@@ -93,19 +95,19 @@ conda init
 Thank you for installing Anaconda3!
 ```
 
-### (legacy) Conda activate
+### ⚠️ (legacy) Conda activate
 
 ```
 $ eval "$(/anaconda3/bin/conda shell.zsh hook)"
 ```
 
-### (legacy) Conda deactivate
+### ⚠️ (legacy) Conda deactivate
 
 ```
 $ conda deactivate
 ```
 
-### (legacy) Jupyter Lab execution
+### ⚠️ (legacy) Jupyter Lab execution
 
 To run **Jupyter Lab** using **Anaconda3** set **LEGACY=1** before using **run.sh** (some notebooks still need this to find the required libraries):
 
