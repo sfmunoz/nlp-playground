@@ -4,20 +4,9 @@ Artificial Intelligence playground to play around and learn AI related skills.
 
 ## Jupyter Lab execution
 
-## uv based
-
 To run **Jupyter Lab** use the **run.sh** script in the root of the project (virtualenv is automatically created by **uv**):
-
 ```
 $ ./run.sh
-```
-
-### (legacy) Anaconda based
-
-To run **Jupyter Lab** using **Anaconda3** set **LEGACY=1** before using **run.sh** (some notebooks still need this to find the required libraries):
-
-```
-$ LEGACY=1 ./run.sh
 ```
 
 ## Git commit workflow
@@ -114,4 +103,12 @@ $ eval "$(/anaconda3/bin/conda shell.zsh hook)"
 
 ```
 $ conda deactivate
+```
+
+### (legacy) Jupyter Lab execution
+
+To run **Jupyter Lab** using **Anaconda3** set **LEGACY=1** before using **run.sh** (some notebooks still need this to find the required libraries):
+
+```
+$ LEGACY=1 ./run.sh
 ```
