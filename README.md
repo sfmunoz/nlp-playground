@@ -36,24 +36,19 @@ $ git commit ...
 
 ```mermaid
 graph TD
-    numpy["numpy"]:::root
-    matplotlib["matplotlib"]:::layer1
-    pandas["pandas"]:::layer1
-    seaborn["seaborn"]:::layer2
-    nltk["nltk"]:::standalone
+    numpy(NumPy)
+    matplotlib(Matplotlib)
+    pandas(Pandas)
+    seaborn(Seaborn)
+    nltk(Nltk)
 
-    matplotlib -->|depends| numpy
-    pandas -->|depends| numpy
-    seaborn -->|depends| numpy
-    seaborn -->|depends| pandas
-    seaborn -->|depends| matplotlib
-    nltk -.->|optional: plot| matplotlib
-    nltk -.->|optional: ml| numpy
-
-    classDef root fill:#1a1a2e,stroke:#e94560,color:#eee
-    classDef layer1 fill:#16213e,stroke:#0f3460,color:#eee
-    classDef layer2 fill:#0f3460,stroke:#533483,color:#eee
-    classDef standalone fill:#2d2d2d,stroke:#666,color:#aaa
+    matplotlib --> numpy
+    pandas --> numpy
+    seaborn --> numpy
+    seaborn --> pandas
+    seaborn --> matplotlib
+    nltk -.-> matplotlib
+    nltk -.-> numpy
 ```
 
 ---
