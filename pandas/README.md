@@ -14,6 +14,7 @@ graph TD
     pandas(Pandas)
     seaborn(Seaborn)
     nltk(NLTK)
+    spacy(spaCy)
 
     jupyterlab --> ipykernel
     notebook --> ipykernel
@@ -24,6 +25,8 @@ graph TD
     seaborn --> matplotlib
     nltk -.-> matplotlib
     nltk -.-> numpy
+    spacy --> numpy
+    spacy -.-> matplotlib
 
     classDef default fill:#ffe,stroke:#678,stroke-width:1px,color:#884;
     classDef highlight fill:#cc8,stroke:#345,stroke-width:2px
