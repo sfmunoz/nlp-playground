@@ -2,6 +2,23 @@
 
 Artificial Intelligence playground to play around and learn AI related skills.
 
+```mermaid
+graph TD
+    numpy(NumPy)
+    matplotlib(Matplotlib)
+    pandas(Pandas)
+    seaborn(Seaborn)
+    nltk(NLTK)
+
+    matplotlib --> numpy
+    pandas --> numpy
+    seaborn --> numpy
+    seaborn --> pandas
+    seaborn --> matplotlib
+    nltk -.-> matplotlib
+    nltk -.-> numpy
+```
+
 ## Jupyter Lab execution
 
 To run **Jupyter Lab** use the **run.sh** script in the root of the project (virtualenv is automatically created by **uv**):
@@ -30,25 +47,6 @@ $ git diff
   (... check final diff ...)
 
 $ git commit ...
-```
-
-## Library deps
-
-```mermaid
-graph TD
-    numpy(NumPy)
-    matplotlib(Matplotlib)
-    pandas(Pandas)
-    seaborn(Seaborn)
-    nltk(Nltk)
-
-    matplotlib --> numpy
-    pandas --> numpy
-    seaborn --> numpy
-    seaborn --> pandas
-    seaborn --> matplotlib
-    nltk -.-> matplotlib
-    nltk -.-> numpy
 ```
 
 ---
