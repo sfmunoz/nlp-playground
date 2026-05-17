@@ -4,12 +4,17 @@ Artificial Intelligence playground to play around and learn AI related skills.
 
 ```mermaid
 graph TD
+    jupyterlab(JupyterLab)
+    notebook(Notebook)
+    ipykernel(IPython Kernel)
     numpy(NumPy)
     matplotlib(Matplotlib)
     pandas(Pandas)
     seaborn(Seaborn)
     nltk(NLTK)
 
+    jupyterlab --> ipykernel
+    notebook --> ipykernel
     matplotlib --> numpy
     pandas --> numpy
     seaborn --> numpy
