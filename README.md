@@ -3,6 +3,50 @@
 Natural Language Processing playground to play around and learn NLP related skills.
 
 ```mermaid
+---
+config:
+  look: handDrawn
+  theme: neutral
+---
+flowchart LR
+    subgraph AI["Artificial Intelligence"]
+        direction TB
+        subgraph ML["Machine Learning"]
+            direction TB
+            DL("Deep Learning")
+        end
+        Robotics("Robotics")
+        KRR("Knowledge\nRepresentation\n& Reasoning")
+        CV("Computer\nVision")
+        NLP("Natural\nLanguage\nProcessing")
+        NLP -.- ML
+        KRR -.- ML
+        ML -.- CV
+        ML -.- Robotics
+    end
+    subgraph DS["Data Science"]
+        direction LR
+        DV("Data\nVisualization")
+        SI("Statistical\nInference")
+        Math("Mathematics")
+        Stats("Statistics")
+        DA("Data\nAnalysis")
+        DE("Data\nEngineering")
+        DM("Data\nMining")
+        More("...")
+        DV ~~~ SI
+        Math ~~~ Stats
+        DA ~~~ DE
+        DM ~~~ More
+    end
+    AI -.- DS
+    classDef focus fill:#bbb,stroke-width:3px,color:#000;
+    class NLP focus;
+```
+
+## Library Dependencies
+
+```mermaid
 graph TD
     jupyterlab(JupyterLab)
     notebook(Notebook)
