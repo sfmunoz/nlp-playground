@@ -1,6 +1,6 @@
-# ai-playground
+# nlp-playground
 
-Artificial Intelligence playground to play around and learn AI related skills.
+Natural Language Processing playground to play around and learn NLP related skills.
 
 ```mermaid
 graph TD
