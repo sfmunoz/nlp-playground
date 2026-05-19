@@ -44,6 +44,11 @@ flowchart LR
     class NLP highlight
 ```
 
+## References
+
+- https://github.com/l-newbould/introtonlp-365
+- [ENTIRE Natural Language Processing CRASH COURSE in 45 MINS!](https://www.youtube.com/watch?v=xrtn9j-fJdk)
+
 ## Library Dependencies
 
 ```mermaid
