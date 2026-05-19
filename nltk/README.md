@@ -5,6 +5,11 @@
 ## Library Dependencies
 
 ```mermaid
+---
+config:
+  look: handDrawn
+  theme: neutral
+---
 graph TD
     jupyterlab(JupyterLab)
     notebook(Notebook)
@@ -28,8 +33,7 @@ graph TD
     spacy --> numpy
     spacy -.-> matplotlib
 
-    classDef default fill:#ffe,stroke:#678,stroke-width:1px,color:#884;
-    classDef highlight fill:#cc8,stroke:#345,stroke-width:2px
+    classDef highlight fill:#bbb,stroke-width:3px,color:#000
     class nltk highlight
 ```
 
